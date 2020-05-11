@@ -1,0 +1,25 @@
+{
+  "name": "html-r",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel ./src/index.html",
+    "build": "npx parcel build ./src/index.html --experimental-scope-hoisting"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@abraham/reflection": "^0.7.0",
+    "@rhtml/components": "0.0.57",
+    "@rhtml/di": "0.0.57",
+    "@rhtml/experiments": "0.0.57",
+    "@rhtml/operators": "0.0.57"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}

@@ -1,0 +1,14 @@
+<script src="./main.ts"></script>
+
+<main-app></main-app>
+
+<script>
+  const el = document.querySelector("main-app");
+  window.customElements.whenDefined("main-app").then((m) => {
+    let count = 0;
+    setInterval(() => {
+      el.routes = el.routes || [];
+      el.routes = [...el.routes, count++];
+    }, 100);
+  });
+</script>
