@@ -4,11 +4,9 @@
 
 <script>
   const el = document.querySelector("main-app");
-  window.customElements.whenDefined("main-app").then((m) => {
-    let count = 0;
-    setInterval(() => {
-      el.routes = el.routes || [];
-      el.routes = [...el.routes, count++];
-    }, 100);
-  });
+  let count = 0;
+  setInterval(() => {
+    el.routes = el.routes || [];
+    el.routes = [...el.routes, count++];
+  }, 100);
 </script>
